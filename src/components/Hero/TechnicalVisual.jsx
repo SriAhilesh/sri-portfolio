@@ -1,42 +1,17 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Cpu, Server, Cloud, ShieldCheck, Database, GitBranch, Terminal, Activity } from 'lucide-react';
+import { Cpu, Server, Cloud, GitBranch, Activity } from 'lucide-react';
+import { heroArchitectureData } from '../../data/profile';
+
+const layerIcons = {
+  Server,
+  Cloud,
+  Cpu
+};
 
 export default function TechnicalVisual() {
   const [activeLayer, setActiveLayer] = useState(null);
-
-  const systemLayers = [
-    {
-      id: 'ai',
-      title: 'AI / ML Layer',
-      subtitle: 'Models & Inference Systems',
-      icon: Cpu,
-      accent: 'from-purple-500/20 to-indigo-500/20 border-purple-500/40 text-purple-400',
-      badgeColor: 'bg-purple-500/10 text-purple-300 border-purple-500/30',
-      techs: ['PyTorch', 'SciBERT', 'LLMs', 'ResNet-50', 'Federated Learning'],
-      metrics: '96% & 77.2% Accuracy'
-    },
-    {
-      id: 'software',
-      title: 'Software & Application Layer',
-      subtitle: 'Full-Stack Services & APIs',
-      icon: Server,
-      accent: 'from-cyan-500/20 to-blue-500/20 border-cyan-500/40 text-cyan-400',
-      badgeColor: 'bg-cyan-500/10 text-cyan-300 border-cyan-500/30',
-      techs: ['Java', 'React.js', 'Node.js', 'REST APIs', 'MySQL'],
-      metrics: '5+ Enterprise Apps'
-    },
-    {
-      id: 'cloud',
-      title: 'Cloud & Infrastructure Layer',
-      subtitle: 'DevOps & Microservices',
-      icon: Cloud,
-      accent: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/40 text-emerald-400',
-      badgeColor: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30',
-      techs: ['AWS', 'Docker', 'GitHub Actions', 'Jenkins', 'Nginx'],
-      metrics: '10+ Microservices'
-    }
-  ];
+  const { layers, footerTags } = heroArchitectureData;
 
   return (
     <div className="relative w-full max-w-lg mx-auto lg:max-w-none">
@@ -58,8 +33,8 @@ export default function TechnicalVisual() {
 
         {/* Stack Layers */}
         <div className="space-y-4">
-          {systemLayers.map((layer, index) => {
-            const Icon = layer.icon;
+          {layers.map((layer, index) => {
+            const Icon = layerIcons[layer.iconName] || Server;
             const isHovered = activeLayer === layer.id;
 
             return (
@@ -106,7 +81,7 @@ export default function TechnicalVisual() {
                 </motion.div>
 
                 {/* Animated Data Flow Connector Arrow (between layers) */}
-                {index < systemLayers.length - 1 && (
+                {index < layers.length - 1 && (
                   <div className="relative py-1 flex items-center justify-center">
                     <div className="w-full h-px bg-slate-800/80 relative">
                       <motion.div
@@ -141,12 +116,13 @@ export default function TechnicalVisual() {
             <Activity className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
             <span>ORCHESTRATION: SYNCED</span>
           </div>
-          <div className="flex items-center space-x-3 text-slate-400">
-            <span>AWS ECS</span>
-            <span>•</span>
-            <span>REST API</span>
-            <span>•</span>
-            <span>PyTorch</span>
+          <div className="flex items-center space-x-2 text-slate-400">
+            {footerTags.map((tag, tIdx) => (
+              <React.Fragment key={tag}>
+                {tIdx > 0 && <span>•</span>}
+                <span>{tag}</span>
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>
