@@ -32,12 +32,12 @@ export const researchData = [
     title: "Claim–Evidence Misalignment Detection in Scientific Research Papers",
     statusBadge: "Research Work — Publication Pending",
     applicationNo: null,
-    metricHighlight: null,
-    metricLabel: null,
+    metricHighlight: "77.2%",
+    metricLabel: "Classification Accuracy",
     secondaryMetric: null,
     technologies: ["NLP", "Natural Language Processing", "Machine Learning", "Text Verification"],
-    description: "Developed an NLP-based system for identifying potential misalignment between scientific claims and their supporting evidence in research papers. The project focuses on automated scientific text analysis and claim-evidence verification.",
-    keyTakeaway: "Automates scientific claim-evidence verification using domain-adapted NLP models.",
+    description: "Developed an NLP-based system for identifying potential misalignment between scientific claims and their supporting evidence in research papers, focusing on automated scientific text analysis and claim-evidence verification.",
+    keyTakeaway: "Achieved 77.2% classification accuracy in automated scientific claim-evidence verification.",
     proofUrl: null,
     linkText: null
   }
