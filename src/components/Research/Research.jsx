@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Microscope, ExternalLink, FileText, ShieldCheck } from 'lucide-react';
+import { Microscope, ExternalLink, FileText } from 'lucide-react';
 import { researchData } from '../../data/research';
 import { Container, SectionHeader } from '../common';
 
@@ -78,20 +78,16 @@ export default function Research() {
                     </div>
                   )}
 
-                  {/* Description */}
-                  <p className="text-xs text-slate-300 mt-3 leading-relaxed">
+                  {/* Description - Same body font & text styling as Projects section */}
+                  <p className="text-sm text-slate-300 mt-3 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
 
-                {/* Tech Stack & Key Takeaway */}
+                {/* Tech Stack & Proof Link Footer */}
                 <div className="mt-6 pt-4 border-t border-slate-800/60 space-y-3">
-                  <div className="text-[11px] text-slate-400 italic">
-                    "{item.keyTakeaway}"
-                  </div>
-
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-1.5 pt-1">
+                  <div className="flex flex-wrap gap-1.5">
                     {item.technologies.map((tech) => (
                       <span
                         key={tech}
@@ -104,7 +100,7 @@ export default function Research() {
 
                   {/* Clickable Proof / Certificate Link (if provided) */}
                   {item.proofUrl && (
-                    <div className="pt-2">
+                    <div className="pt-1">
                       <a
                         href={item.proofUrl}
                         target="_blank"

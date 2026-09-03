@@ -7,9 +7,8 @@ export const researchData = [
     metricHighlight: "99.40%",
     metricLabel: "Risk Classification Accuracy",
     secondaryMetric: "0.97 Dice Score",
-    technologies: ["Deep Learning", "Radiomics", "Explainable AI (SHAP)", "Medical Image Analysis", "MRI Segmentation"],
-    description: "Proposed RADIFUSE-Net, a unified framework for brain tumor segmentation and three-level risk stratification from multi-modal MRI scans. The framework combines radiomic and deep feature representations for improved tumor risk prediction and uses explainable AI for feature interpretation.",
-    keyTakeaway: "Achieved 0.97 Dice Score for segmentation and 99.40% classification accuracy with SHAP explainability.",
+    technologies: ["Deep Learning", "Radiomics", "Explainable AI", "Medical Image Analysis"],
+    description: "Proposed a unified deep learning framework for brain tumor segmentation and three-level risk stratification from multi-modal MRI scans. Combined radiomic and deep features with explainable AI for interpretable risk prediction.",
     proofUrl: "https://drive.google.com/file/d/19c9xSDX2y-qITxTZpoHKgfCMSNjAjtyA/view?usp=sharing",
     linkText: "View Paper / Certificate ↗"
   },
@@ -22,8 +21,7 @@ export const researchData = [
     metricLabel: "Classification Accuracy",
     secondaryMetric: null,
     technologies: ["Federated Learning", "Deep Learning", "Medical Image Analysis", "Privacy-Preserving AI"],
-    description: "Designed a Federated Learning-based clinical decision support system for privacy-preserving breast cancer detection, enabling distributed model training without requiring centralized sharing of sensitive medical data.",
-    keyTakeaway: "Enables multi-institutional medical AI collaboration while safeguarding patient data privacy.",
+    description: "Designed a privacy-preserving breast cancer detection system using Federated Learning, enabling distributed model training without centralized sharing of sensitive medical data.",
     proofUrl: "https://drive.google.com/file/d/1bEKQw_HZ13B_5w3ersadS0uzUDJNHM05/view?usp=sharing",
     linkText: "View Patent Proof ↗"
   },
@@ -36,8 +34,7 @@ export const researchData = [
     metricLabel: "Classification Accuracy",
     secondaryMetric: null,
     technologies: ["NLP", "Natural Language Processing", "Machine Learning", "Text Verification"],
-    description: "Developed an NLP-based system for identifying potential misalignment between scientific claims and their supporting evidence in research papers, focusing on automated scientific text analysis and claim-evidence verification.",
-    keyTakeaway: "Achieved 77.2% classification accuracy in automated scientific claim-evidence verification.",
+    description: "Developed an NLP-based system to identify potential misalignment between scientific claims and their supporting evidence in research papers. Built the pipeline for automated scientific text analysis and claim-evidence verification.",
     proofUrl: null,
     linkText: null
   }
