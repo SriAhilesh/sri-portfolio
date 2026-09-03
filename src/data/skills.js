@@ -3,9 +3,9 @@ export const skillsData = [
     id: "software",
     category: "SOFTWARE ENGINEERING",
     iconName: "Code2",
-    description: "Core algorithms, full-stack web platforms, object-oriented systems, and clean database engineering.",
+    description: "Core programming, object-oriented development, full-stack applications, REST APIs, and relational databases.",
     skills: [
-      { name: "Java", category: "Languages" },
+      { name: "Java", category: "Core Language", isPrimary: true },
       { name: "React.js", category: "Frontend" },
       { name: "Node.js", category: "Backend" },
       { name: "Express.js", category: "Backend" },
@@ -17,43 +17,42 @@ export const skillsData = [
     id: "cloud",
     category: "CLOUD & DEVOPS",
     iconName: "Cloud",
-    description: "Cloud-native infrastructure provisioning, container orchestrations, and automated deployment pipelines.",
+    description: "Cloud infrastructure, containerization, CI/CD automation, and microservice deployment workflows.",
     skills: [
       { name: "AWS", category: "Cloud Platform" },
       { name: "Docker", category: "Containers" },
       { name: "GitHub Actions", category: "CI/CD" },
       { name: "Jenkins", category: "Automation" },
-      { name: "Ansible", category: "Configuration" },
       { name: "CI/CD", category: "DevOps" },
-      { name: "Microservices", category: "Architecture" }
+      { name: "Microservices", category: "Architecture" },
+      { name: "Linux", category: "OS" }
     ]
   },
   {
     id: "ai",
     category: "AI / ML",
     iconName: "Cpu",
-    description: "Large Language Models, deep learning architectures, Transformer fine-tuning, and agentic workflows.",
+    description: "Intermediate-level practical exposure to AI/ML through NLP, deep learning, LLM-based applications, and federated learning projects.",
     skills: [
-      { name: "NLP", category: "Subfield" },
-      { name: "LLMs", category: "Generative AI" },
-      { name: "PyTorch", category: "Framework" },
-      { name: "Hugging Face", category: "Ecosystem" },
-      { name: "SciBERT", category: "Transformer" },
-      { name: "Prompt Engineering", category: "AI Tech" },
-      { name: "Agentic AI", category: "Autonomous" }
+      { name: "Python", category: "Language" },
+      { name: "NLP", category: "Domain" },
+      { name: "Machine Learning", category: "Core" },
+      { name: "Deep Learning", category: "Core" },
+      { name: "LLMs", category: "Applications" },
+      { name: "Federated Learning", category: "Research" }
     ]
   },
   {
     id: "tools",
     category: "PLATFORMS & TOOLS",
     iconName: "Wrench",
-    description: "Developer tooling, operating system environments, API testing, and version control infrastructure.",
+    description: "Development tools and enterprise platforms used across software development, API testing, and workflow automation.",
     skills: [
       { name: "Git", category: "Version Control" },
       { name: "GitHub", category: "Repository" },
       { name: "Postman", category: "API Testing" },
-      { name: "Linux", category: "OS" },
-      { name: "Nginx", category: "Web Server" }
+      { name: "Zoho Creator", category: "Enterprise Platform" },
+      { name: "Microsoft Power Apps", category: "Enterprise Platform" }
     ]
   }
 ];
