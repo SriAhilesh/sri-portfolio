@@ -29,7 +29,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-[#0a0d14] relative border-t border-slate-900">
       <Container>
         <div className="max-w-4xl mx-auto rounded-3xl bg-gradient-to-b from-[#111622] via-[#131927] to-[#0d111a] border border-slate-800 p-8 sm:p-12 shadow-2xl text-center">
-          
+
           <span className="text-xs font-mono-tech uppercase tracking-widest text-cyan-400 font-semibold">
             // INITIATE CONTACT
           </span>
@@ -62,7 +62,9 @@ export default function Contact() {
               </button>
 
               <a
-                href={`mailto:${profileData.contact.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profileData.contact.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs font-mono-tech flex items-center space-x-1.5 transition-all shadow-md shadow-cyan-500/20"
               >
                 <span>Send Email</span>

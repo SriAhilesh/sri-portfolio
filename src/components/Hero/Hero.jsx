@@ -76,7 +76,7 @@ export default function Hero() {
               </a>
 
               <a
-                href={profileData.contact.github}
+                href={profileData.contact.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700/80 hover:border-slate-600 transition-all duration-200"
@@ -106,7 +106,9 @@ export default function Hero() {
                   <LinkedinIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href={`mailto:${profileData.contact.email}`}
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profileData.contact.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Send Email"
                   className="p-2.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-slate-100 border border-slate-800 hover:border-slate-700 transition-all"
                 >
