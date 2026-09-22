@@ -2,7 +2,7 @@ export const researchData = [
   {
     id: "radifuse-net",
     title: "RADIFUSE-Net: An Explainable Hybrid Radiomics Deep Learning Framework for Brain Tumor Segmentation and Risk Stratification",
-    statusBadge: "Published Conference Paper",
+    statusBadge: "Presented Conference Paper",
     applicationNo: null,
     metricHighlight: "99.40%",
     metricLabel: "Risk Classification Accuracy",
