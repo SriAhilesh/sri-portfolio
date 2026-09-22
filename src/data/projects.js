@@ -1,8 +1,31 @@
 export const projectsData = [
   {
+    id: "nexora",
+    title: "Nexora – AI-Powered Collaborative Engineering Workspace",
+    featured: true,
+    category: "Full-Stack & AI",
+    technologies: [
+      "Spring Boot",
+      "React.js",
+      "PostgreSQL",
+      "REST APIs",
+      "RAG",
+      "Role-Based Access Control"
+    ],
+    description:
+      "Built a full-stack collaborative engineering workspace enabling teams to manage projects, tasks, technical knowledge, and collaboration through REST APIs with role-based access control across personal and organization workspaces. Engineered organization-based collaboration with workspace onboarding, project membership, task management, and AI-powered RAG for context-aware project knowledge retrieval.",
+    githubUrl: "https://github.com/SriAhilesh/nexora",
+    liveUrl: "https://nexora-frontend-ochre.vercel.app/",
+    highlights: [
+      "Spring Boot REST API Architecture",
+      "Organization-Based Collaboration",
+      "AI-Powered RAG Knowledge Retrieval"
+    ]
+  },
+  {
     id: "ai-portfolio-generator",
     title: "AI-Powered Portfolio Generator",
-    featured: true,
+    featured: false,
     category: "AI & Automation",
     technologies: ["Python", "LLMs", "GPT-based models", "Prompt Engineering", "Automation Pipelines"],
     description: "Built an LLM-powered portfolio generation system that automatically creates complete developer portfolios from minimal user input. Designed modular AI workflows for automated content generation and structured rendering.",
