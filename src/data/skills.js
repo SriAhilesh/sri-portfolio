@@ -8,7 +8,7 @@ export const skillsData = [
       { name: "Java", category: "Core Language", isPrimary: true },
       { name: "React.js", category: "Frontend" },
       { name: "Node.js", category: "Backend" },
-      { name: "Express.js", category: "Backend" },
+      { name: "Spring Boot", category: "Backend" },
       { name: "REST APIs", category: "Architecture" },
       { name: "MySQL", category: "Databases" }
     ]

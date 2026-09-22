@@ -30,7 +30,7 @@ export const heroArchitectureData = {
       iconName: "Server",
       accent: "from-cyan-500/20 to-blue-500/20 border-cyan-500/40 text-cyan-400",
       badgeColor: "bg-cyan-500/10 text-cyan-300 border-cyan-500/30",
-      techs: ["Java", "React.js", "Node.js", "Express.js", "REST APIs", "MySQL"],
+      techs: ["Java", "React.js", "Node.js", "Spring Boot", "REST APIs", "MySQL"],
       metrics: "5+ Enterprise Apps"
     },
     {
